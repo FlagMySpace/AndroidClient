@@ -5,7 +5,7 @@ package space.flagmy.flagmyspace;
  */
 public interface LoginService {
 
-    boolean userAuthentication(String username, String password);
-    void userRegister();
+    void userAuthentication(String username, String password);
+    void userRegister(String username, String email, String password);
 
 }
