@@ -7,5 +7,5 @@ public interface LoginService {
 
     void userAuthentication(String username, String password);
     void userRegister(String username, String email, String password);
-
+    void resetPassword(String email);
 }

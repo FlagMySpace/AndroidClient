@@ -9,6 +9,8 @@
     <string name="error_join">Please complete the sign up form</string>
     <string name="error_blank_email">Email cannot be blank</string>
     <string name="error_blank_password">Password cannot be blank</string>
+    <string name="title_activity_forgot">ForgotActivity</string>
+    <string name="back_login">Back to Login</string>
 
 
 </resources>

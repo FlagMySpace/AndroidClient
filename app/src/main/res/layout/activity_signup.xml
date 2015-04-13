@@ -45,8 +45,30 @@
         android:id="@+id/LoginBtn"
         android:onClick="SignupClick"
         android:layout_below="@+id/passwordText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_alignLeft="@+id/passwordText"
+        android:layout_alignStart="@+id/passwordText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="already Sign Up?"
+        android:id="@+id/textView"
+        android:layout_below="@+id/LoginBtn"
+        android:layout_alignLeft="@+id/LoginBtn"
+        android:layout_alignStart="@+id/LoginBtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/material_blue_grey_800"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:paddingLeft="12dp"
+        android:clickable="true"
+        android:onClick="LoginLink"/>
 
 
 </RelativeLayout>
