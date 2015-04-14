@@ -34,5 +34,10 @@ public class LoginActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
+    public void ForgotPassword(View view){
+        Intent intent = new Intent(this, ForgotActivity.class);
+        startActivity(intent);
+    }
+
 
 }

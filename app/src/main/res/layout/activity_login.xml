@@ -15,7 +15,7 @@
         android:id="@+id/usernameText"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="47dp"
-        android:hint="Username or Email"/>
+        android:hint="Username"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -33,10 +33,10 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/LoginBtn"
-        android:layout_below="@+id/passwordText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp"
-        android:onClick="LoginClick"/>
+        android:onClick="LoginClick"
+        android:layout_above="@+id/forgotText"
+        android:layout_alignLeft="@+id/passwordText"
+        android:layout_alignStart="@+id/passwordText" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -44,8 +44,21 @@
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:id="@+id/SignupBtn"
-        android:layout_below="@+id/LoginBtn"
-        android:layout_centerHorizontal="true"
-        android:onClick="SignupClick"/>
+        android:onClick="SignupClick"
+        android:layout_alignTop="@+id/LoginBtn"
+        android:layout_alignRight="@+id/passwordText"
+        android:layout_alignEnd="@+id/passwordText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="forgot password?"
+        android:clickable="true"
+        android:onClick="ForgotPassword"
+        android:id="@+id/forgotText"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/LoginBtn"
+        android:layout_alignStart="@+id/LoginBtn" />
 
 </RelativeLayout>
